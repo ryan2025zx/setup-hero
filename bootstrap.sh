@@ -11,4 +11,8 @@ fi
 echo "Installing: vim, docker.io, curl"
 sudo apt-get install -y vim docker.io curl
 
+# 3) Install vim configurations
+echo "Installing vim configurations..."
+cp -r dotfiles/.vimrc $HOME/.vimrc
+
 echo "Bootstrap complete! Reload your shell or run 'source ~/.bashrc'."
